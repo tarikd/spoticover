@@ -3,8 +3,8 @@ spoticover
 
 Linux :
 
-apt-get install libspotify
+    apt-get install libspotify
 
 Mac OS X :
 
-brew install libspotify
+    brew install libspotify
