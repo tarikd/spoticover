@@ -1,0 +1,18 @@
+<html>
+  <head>
+    {% if title %}
+    <title>{{title}} - SpotiCover</title>
+    {% else %}
+    <title>SpotiCover</title>
+    {% endif %}
+  </head>
+  <body>
+    <div>SpotiCover: <a href="/index">Home</a>
+    <a href="/login">Sign up</a>
+    </div>
+    <hr>
+    {% with messages = get_flashed_messages() %}
+    {% endwith %}
+    {% block content %}{% endblock %}
+  </body>
+</html>
