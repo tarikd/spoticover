@@ -3,7 +3,7 @@ spoticover
 
 Linux :
 
-    apt-get install libspotify
+    apt-get install libspotify-dev
 
 Mac OS X :
 
