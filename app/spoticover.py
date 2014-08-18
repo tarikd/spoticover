@@ -49,7 +49,7 @@ class SpotifyScavenger:
 		toplist.load()
 		return toplist
 
-	def save_covers(self, toplist, covers_directory):
+	def save_covers(self, toplist, covers_directory = './cover/cover'):
 		i = 1
 		for t in toplist.tracks:
 			print i, t.name, t.duration // 1000, t.popularity
@@ -103,7 +103,7 @@ class CoversCollage:
 
 
 if __name__ == '__main__':
-	# scavenger = SpotifyScavenger('daditarik', 'the4horses')
+	scavenger = SpotifyScavenger('', '')
 	# toplist = scavenger.get_user_toplist()
 	# scavenger.save_covers(toplist)
 	cover = CoversCollage(img_folder, 'facebook_cover')
