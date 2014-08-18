@@ -12,16 +12,9 @@ class SpotifyScavenger:
 
 	def __init__(self, login, password):
 
-		print os.path.dirname(os.path.realpath(__file__))
-
-		appkey = open('spotify_appkey.key', 'rb' ).read()
-
-		config = spotify.Config()
-		config.application_key = appkey
-
 		self.login = login
 		self.password = password
-		self.session = spotify.Session(config=config)
+		self.session = spotify.Session()
 		
 		loop = spotify.EventLoop(self.session)
 		loop.start()
